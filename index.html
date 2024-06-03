@@ -55,6 +55,58 @@
   width: 75%;
   height: auto;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar.dark-mode {
+  background-color: #333333;
+}
+
+.intro-route.dark-mode {
+  background-image: url(img/intro-bg-dark.jpg); /* Ensure you have a darker version of your intro background */
+}
+
+.about-mf.dark-mode {
+  background-color: #1c1c1c;
+}
+
+.services-mf.dark-mode {
+  background-color: #1c1c1c;
+}
+
+.portfolio-mf.dark-mode {
+  background-color: #1c1c1c;
+  
+}
+
+.testimonials.dark-mode {
+  background-image: url(img/overlay-bg-dark.jpg); /* Ensure you have a darker version of your overlay background */
+}
+
+
+
+.skill-mf.dark-mode {
+  background-color: #1c1c1c;
+}
+
+#dark-mode-toggle {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #dark-mode-toggle:hover {
+        background-color: #555;
+    }
 </style>
   
   <!--/ Nav Star /-->
@@ -84,6 +136,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
           </li>
+          <li class="nav-item">
+            <button id="dark-mode-toggle" class="btn btn-dark">Dark Mode</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -91,19 +146,27 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">I am Raihan Caesario Ammar Saputra</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Freelancer,BackEnd Developer</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Detail</a></p> -->
+  <div id="home" class="intro route bg-image" style="background-color: #2c3e50; height: 100vh; display: flex; align-items: center; justify-content: center; position: relative;">
+    <div class="overlay-itro" style="background: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <div class="intro-content display-table" style="display: table; height: 100%; width: 100%; z-index: 1; position: relative;">
+      <div class="table-cell" style="display: table-cell; vertical-align: middle;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+          <div class="text-content" style="color: #ecf0f1;">
+            <h1 class="intro-title mb-4" style="font-size: 3em; font-weight: 700; animation: fadeInDown 2s;">Raihan Caesario Ammar Saputra</h1>
+            <p style="font-size: 1.5em; font-weight: 500; animation: fadeInDown 2s;">Informatics Jenderal Soedirman University </p>
+            <p class="intro-subtitle" style="font-size: 1.5em; animation: fadeInUp 2s; animation-delay: 1s;">
+              <span class="text-slider-items" style="display: none;">Freelancer,BackEnd Developer</span>
+              <strong class="text-slider" style="display: inline-block; border-bottom: 2px solid #ecf0f1;"></strong>
+            </p>
+          </div>
+          <div class="image-content" style="animation: fadeInRight 2s; animation-delay: 2s;">
+            <img src="img/testimonial-2.png" alt="Your Photo" style="border-radius: 50%; width: 400px; height: 400px; object-fit: cover;">
+          </div>
         </div>
       </div>
     </div>
   </div>
+  
   <!--/ Intro Skew End /-->
 
   <section id="about" class="about-mf sect-pt4 route">
@@ -120,7 +183,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
+                    <div class="about-info" style="color: black;">
                       <p><span class="title-s">Name: </span> <br><span>Raihan Caesario Ammar Saputra</span></p>
                       <p><span class="title-s">Profile: </span> <br><span>Backend Developer</span></p>
                       <p><span class="title-s">Email: </span> <br><span>Raihanammarsaputra@gmail.com</span></p>
@@ -170,14 +233,14 @@
                       About me
                     </h5>
                   </div>
-                  <p class="lead">
+                  <p class="lead" style="color: black;">
                     My experience spans a range of areas, from software development and data analysis to 
                     information systems management. I excel at translating technical concepts into practical solutions, 
                     collaborating effectively with cross-functional teams, and implementing strategies that harness the 
                     power of data to inform decision-making.
 
                   </p>
-                  <p class="lead">
+                  <p class="lead" style="color: black;">
                     In my career, I've had the privilege of working on diverse projects, each offering unique challenges
                      and opportunities for growth. Whether it's optimizing processes, developing robust software solutions,
                       or ensuring data security and privacy compliance, I approach each task with enthusiasm and a commitment 
@@ -189,7 +252,7 @@
                       Education
                     </h5>
                   </div>
-                  <p class="lead">
+                  <p class="lead" style="color: black;">
                     <strong>Undergraduate Informatics Engineering Student <br>
                       </strong>Jendral Soedirman University<br>
                       GPA 3.76 - 5th Semester
@@ -197,7 +260,7 @@
                     
                     2021 - Present
                   </p>
-                  <p class="lead">
+                  <p class="lead" style="color: black;">
                     <strong>Science Class</strong><br>
                     Tulus Bhakti High School<br>
                     2018 — 2021
@@ -230,59 +293,64 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="service-box">
+          <div class="service-box" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; padding: 20px; margin-bottom: 30px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
             <div class="service-ico">
-              <a href=" https://www.monocafe.shop/"><img src="images/blog-post-1.jpg" alt="" class="img-fluid"></a>
-             
+              <a href="https://www.monocafe.shop/"><img src="images/blog-post-1.jpg" alt="" class="img-fluid" style="width: 100%; height: auto; border-radius: 10px;"></a>
             </div>
-            <div class="service-content">
-              <h2 class="s-title">MonoCafe</h2>
+            <div class="service-content" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <h2 class="s-title" style="margin-top: 15px;">MonoCafe</h2>
               <p class="s-description text-center">
-                
                 Mono Cafe adalah sebuah kafe yang menawarkan pengalaman unik dengan suasana yang nyaman dan modern.
-               
               </p>
-            </div>         
-          </div>
-          <div class="socials box-shadow-full" id="contact">
-            <div class="socials" id="contact">
-              <ul>
-                <li><a href="https://github.com/lastpeace"><span class="ico-circle mx-auto"><i class="ion-social-github mx-auto"></i></span></a></li>
-              </ul>
+              <div class="socials text-center" id="" style="font-size: 24px; display: flex; justify-content: center; align-items: center;">
+                <a href="https://github.com/lastpeace/kasirlaravel" class="social-icon" style="font-size: 32px; display: flex; justify-content: center; align-items: center; color: #333; text-decoration: none;">
+                  <i class="ion-social-github" style="font-size: 32px;"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="service-box">
-              <div class="work-img">
-                <a href="https://github.com/lastpeace/E-VOTING"><img src="images/blog-post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-          
-            <div class="service-content">
-              <h2 class="s-title">E-Voting</h2>
+          <div class="service-box" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; padding: 20px; margin-bottom: 30px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <div class="work-img">
+              <a href="https://github.com/lastpeace/E-VOTING"><img src="images/blog-post-2.jpg" alt="" class="img-fluid" style="width: 100%; height: auto; border-radius: 10px;"></a>
+            </div>
+            <div class="service-content" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <h2 class="s-title" style="margin-top: 15px;">E-Voting</h2>
               <p class="s-description text-center">
                 Aplikasi yang dirancang untuk memungkinkan pemilihan elektronik, 
                 di mana pemilih dapat memberikan suara mereka melalui perangkat digital.
               </p>
+              <div class="socials text-center" id="" style="font-size: 24px; display: flex; justify-content: center; align-items: center;">
+                <a href="https://github.com/lastpeace/E-VOTING" class="social-icon" style="font-size: 32px; display: flex; justify-content: center; align-items: center; color: #333; text-decoration: none;">
+                  <i class="ion-social-github" style="font-size: 32px;"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="service-box">
+          <div class="service-box" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; padding: 20px; margin-bottom: 30px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
             <div class="service-ico">
-              <a href="https://github.com/lastpeace/klinik"><img src="images/blog-post-3.jpg" alt="" class="img-fluid"></a>
+              <a href="https://github.com/lastpeace/klinik"><img src="images/blog-post-3.jpg" alt="" class="img-fluid" style="width: 100%; height: auto; border-radius: 10px;"></a>
             </div>
-            <div class="service-content">
-              <h2 class="s-title">Aplikasi Klinik</h2>
+            <div class="service-content" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <h2 class="s-title" style="margin-top: 15px;">Aplikasi Klinik</h2>
               <p class="s-description text-center">
                 perangkat lunak yang dirancang untuk membantu pengelolaan operasional klinik atau pusat kesehatan.
               </p>
+              <div class="socials text-center" id="" style="font-size: 24px; display: flex; justify-content: center; align-items: center;">
+                <a href="https://github.com/lastpeace/klinik" class="social-icon" style="font-size: 32px; display: flex; justify-content: center; align-items: center; color: #333; text-decoration: none;">
+                  <i class="ion-social-github" style="font-size: 32px;"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!--/ Section Portfolio Star /-->
   <section id="work" class="portfolio-mf sect-pt4 route">
@@ -468,23 +536,43 @@
     </div>
   </div>
 
-  <!--/ Section Contact-Footer Star /-->
-  <section>
-  <footer>
-          <div class="socials box-shadow-full" id="contact">
-            <ul>
-              <li><a href="mailto:raihanammarsaputra@gmail.com"><span class="ico-circle"><i class="fa fa-envelope"></i></span></a></li>
-              <li><a href="https://www.linkedin.com/in/raihanammar/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-              <li><a href="https://www.instagram.com/ammar_caesario/"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-              <li><a href="https://github.com/lastpeace"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-              <li><a href="https://wa.link/yv7en9"><span class="ico-circle"><i class="ion-social-whatsapp"></i></span></a></li>
-            </ul>
-          </div>
-      
+  <footer style="background-color: black; padding: 50px 0; color: black; text-align: center;">
+    <div class="socials box-shadow-full" id="contact">
+      <ul style="list-style: none; padding: 0;">
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="mailto:raihanammarsaputra@gmail.com" style="color: black; font-size: 24px;">
+            <span class="ico-circle"><i class="fa fa-envelope"></i></span>
+          </a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="https://www.linkedin.com/in/raihanammar/" style="color: black; font-size: 24px;">
+            <span class="ico-circle"><i class="ion-social-linkedin"></i></span>
+          </a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="https://www.instagram.com/ammar_caesario/" style="color: black; font-size: 24px;">
+            <span class="ico-circle"><i class="ion-social-instagram"></i></span>
+          </a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="https://github.com/lastpeace" style="color: black; font-size: 24px;">
+            <span class="ico-circle"><i class="ion-social-github"></i></span>
+          </a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="https://wa.link/yv7en9" style="color: black; font-size: 24px;">
+            <span class="ico-circle"><i class="ion-social-whatsapp"></i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
-  </section>
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+  
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<div id="preloader"></div>
+
+</body>
+</html>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -502,6 +590,27 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-</body>
-</html>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const toggleButton = document.getElementById('dark-mode-toggle');
+      const body = document.body;
+    
+      toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        // Save the preference to local storage
+        if (body.classList.contains('dark-mode')) {
+          localStorage.setItem('theme', 'dark');
+        } else {
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    
+      // Load the preference from local storage
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        body.classList.add('dark-mode');
+      }
+    });
+    </script>
+    
